@@ -22,8 +22,17 @@
     @else
         <div class="center jumbotron">
             <div class="text-center">
-                <h1>Welcome to the Microposts</h1>
-                {!! link_to_route('signup.get', 'Sign up now!', null, ['class' => 'btn btn-lg btn-primary']) !!}
+                <h1 class="fas fa-child">Welcome to the Microposts</h1>
+                <a class="fas fa-list-alt fa-2x">タスクを管理しましょう</a>
+                <style>
+                    .fa-list-alt{
+                        color:#30a39f;
+                        padding-right:20px;
+                    }
+                </style>
+               {!! link_to_route('signup.get','Sign up now!', null, ['class' =>'btn btn-lg btn-primary']) !!}
+               
+               {!! link_to_route('login', 'Login now!',null, ['class' =>'btn btn-lg btn-default']) !!}
             </div>
         </div>
     @endif

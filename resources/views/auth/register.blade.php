@@ -17,6 +17,7 @@
                 <div class="form-group">
                     {!! Form::label('email', 'Email') !!}
                     {!! Form::email('email', old('email'), ['class' => 'form-control']) !!}
+                     <p>※テストの際は架空のメールアドレスを使用してください</p>
                 </div>
 
                 <div class="form-group">
